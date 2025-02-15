@@ -7,18 +7,23 @@ import Contact from "./pages/ContactPage";
 import Navbar from "./components/Navbar";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Footer from "./components/Footer";
+import ProductsPage from "./pages/ProductsPage";
+
 function App() {
   return (
     <>
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/products" element={<ProductsPage />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

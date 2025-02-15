@@ -39,16 +39,15 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <span className="text-2xl font-bold text-indigo-600">Pussy21</span>
             </div>
-            <div className="hidden md:block">
+            
+          </div>
+          <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a href="/" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </a>
                 <a href="/products" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
                   Products
-                </a>
-                <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Categories
                 </a>
                 <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
                   Sell
@@ -58,7 +57,6 @@ const Navbar = () => {
                 </a>
               </div>
             </div>
-          </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
               <div className="relative">
@@ -79,10 +77,10 @@ const Navbar = () => {
                 <div className="absolute top-16 right-24 bg-white mt w-48 shadow-lg rounded-md border border-gray-200">
                   {!isLoggedIn ? (
                     <div className="py-2">
-                      <button onClick={handleLogin} className="block w-full hover:text-blue-600 px-4 py-2 text-gray-600 hover:bg-gray-100">
+                      <button onClick={handleLogin} className="block w-full hover:text-indigo-600 px-4 py-2 text-gray-600 hover:bg-gray-100">
                         Login
                       </button>
-                      <button onClick={handleRegister} className="block w-full hover:text-blue-600 px-4 py-2 text-gray-600 hover:bg-gray-100">
+                      <button onClick={handleRegister} className="block w-full hover:text-indigo-600 px-4 py-2 text-gray-600 hover:bg-gray-100">
                         Register
                       </button>
                     </div>

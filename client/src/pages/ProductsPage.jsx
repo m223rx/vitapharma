@@ -34,6 +34,36 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71fRP7KY9hL._AC_SL1500_.jpg",
     rating: 5,
   },
+  {
+    id: 5,
+    name: "Wireless Headphones",
+    price: 99.99,
+    image:
+      "https://www.sbsmobile.com/ita/305114-thickbox_default/floxy-headphones.jpg",
+    rating: 4,
+  },
+  {
+    id: 6,
+    name: "Smartwatch",
+    price: 149.99,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO4touz92RkST3TQDgbSums2rtrdL1UGWlHg&s",
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "Gaming Mouse",
+    price: 59.99,
+    image: "https://m.media-amazon.com/images/I/71fEUcsDDEL.jpg",
+    rating: 3,
+  },
+  {
+    id: 8,
+    name: "Mechanical Keyboard",
+    price: 129.99,
+    image: "https://m.media-amazon.com/images/I/71fRP7KY9hL._AC_SL1500_.jpg",
+    rating: 5,
+  },
 ];
 
 function ProductsPage({ product }) {

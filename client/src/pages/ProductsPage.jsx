@@ -136,7 +136,7 @@ function ProductsPage({ product }) {
               </div>
             </div>
 
-            <button className='w-full rounded bg-indigo-600 py-2 text-white hover:bg-indigo-700'>
+            <button className='w-full rounded bg-indigo-600 py-2 text-white hover:bg-indigo-700 cursor-pointer'>
               Apply Filters
             </button>
           </aside>

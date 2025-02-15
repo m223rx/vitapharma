@@ -47,7 +47,9 @@ const Navbar = () => {
                 Pussy21
               </span>
             </div>
-            <div className="hidden md:block">
+            
+          </div>
+          <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="/"
@@ -61,6 +63,7 @@ const Navbar = () => {
                 >
                   Products
                 </a>
+<<<<<<< HEAD
                 <a
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
@@ -71,6 +74,9 @@ const Navbar = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
+=======
+                <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
+>>>>>>> 47a9d7c7db72e293c15c8bd366c40bc2585dafa2
                   Sell
                 </a>
                 <a
@@ -81,7 +87,6 @@ const Navbar = () => {
                 </a>
               </div>
             </div>
-          </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
               <div className="relative">
@@ -102,6 +107,7 @@ const Navbar = () => {
                 <div className="absolute top-16 right-24 bg-white mt w-48 shadow-lg rounded-md border border-gray-200">
                   {!isLoggedIn ? (
                     <div className="py-2">
+<<<<<<< HEAD
                       <button
                         onClick={handleLogin}
                         className="block w-full hover:text-blue-600 px-4 py-2 text-gray-600 hover:bg-gray-100"
@@ -112,6 +118,12 @@ const Navbar = () => {
                         onClick={handleRegister}
                         className="block w-full hover:text-blue-600 px-4 py-2 text-gray-600 hover:bg-gray-100"
                       >
+=======
+                      <button onClick={handleLogin} className="block w-full hover:text-indigo-600 px-4 py-2 text-gray-600 hover:bg-gray-100">
+                        Login
+                      </button>
+                      <button onClick={handleRegister} className="block w-full hover:text-indigo-600 px-4 py-2 text-gray-600 hover:bg-gray-100">
+>>>>>>> 47a9d7c7db72e293c15c8bd366c40bc2585dafa2
                         Register
                       </button>
                     </div>

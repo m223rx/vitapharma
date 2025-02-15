@@ -55,14 +55,10 @@ const Navbar = () => {
                 >
                   Home
                 </a>
-<<<<<<< HEAD
                 <a
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
-=======
-                <a href="/products" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
->>>>>>> 2b31f2e171ae4f0ad11700790b3b87bf73f23591
                   Products
                 </a>
                 <a

@@ -5,8 +5,14 @@ import Home from "./pages/HomePage";
 import About from "./pages/AboutPage";
 import Contact from "./pages/ContactPage";
 import Navbar from "./components/Navbar";
+<<<<<<< Updated upstream
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+=======
+import Footer from "./components/Footer";
+import ProductsPage from "./pages/ProductsPage";
+
+>>>>>>> Stashed changes
 function App() {
   return (
     <>
@@ -16,9 +22,14 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+<<<<<<< Updated upstream
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+=======
+          <Route path='/products' element={<ProductsPage />} />
+>>>>>>> Stashed changes
         </Routes>
+        <Footer />
       </Router>
     </>
   );

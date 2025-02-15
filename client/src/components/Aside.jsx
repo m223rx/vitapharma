@@ -8,9 +8,7 @@ const Aside = () => {
   const [priceRange, setPriceRange] = useState([0, 1000]);
   const [rating, setRating] = useState(0);
 
-  const toggleAside = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleAside = () => setIsOpen(!isOpen);
 
   const categories = [
     "Electronics",
@@ -101,43 +99,11 @@ const Aside = () => {
           </div>
         </div>
 
-        <div className='mb-6'>
-          <h3 className='mb-2 font-medium text-gray-700'>More Filters</h3>
-          <ul className='space-y-2'>
-            <li>
-              <label className='flex items-center'>
-                <input
-                  type='checkbox'
-                  className='form-checkbox text-indigo-600'
-                />
-                <span className='ml-2 text-gray-700'>Free Shipping</span>
-              </label>
-            </li>
-            <li>
-              <label className='flex items-center'>
-                <input
-                  type='checkbox'
-                  className='form-checkbox text-indigo-600'
-                />
-                <span className='ml-2 text-gray-700'>On Sale</span>
-              </label>
-            </li>
-            <li>
-              <label className='flex items-center'>
-                <input
-                  type='checkbox'
-                  className='form-checkbox text-indigo-600'
-                />
-                <span className='ml-2 text-gray-700'>In Stock</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-
         <button className='w-full rounded bg-indigo-600 py-2 text-white hover:bg-indigo-700'>
           Apply Filters
         </button>
       </aside>
+
       {isOpen && (
         <div
           className='fixed inset-0 z-20 bg-[#FBFFE4] bg-opacity-50 lg:hidden'

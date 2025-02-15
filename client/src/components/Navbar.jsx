@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ShoppingCart, User, Menu, X, Search } from "lucide-react";
 import { useNavigate } from "react-router-dom"; // For redirection
 
@@ -8,13 +8,19 @@ const Navbar = () => {
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false); // State to toggle profile menu
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const isAuthenticated = JSON.parse(localStorage.getItem("isAuthenticated"));
+
+    setIsLoggedIn(isAuthenticated)
+  }, []);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleLogin = () => {
     navigate("/login");
-    setIsProfileMenuOpen()
+    setIsProfileMenuOpen();
   };
 
   const handleRegister = () => {
@@ -37,23 +43,40 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <span className="text-2xl font-bold text-indigo-600">Pussy21</span>
+              <span className="text-2xl font-bold text-indigo-600">
+                Pussy21
+              </span>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a href="/" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   Home
                 </a>
-                <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   Products
                 </a>
-                <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   Categories
                 </a>
-                <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   Sell
                 </a>
-                <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   About
                 </a>
               </div>
@@ -79,18 +102,31 @@ const Navbar = () => {
                 <div className="absolute top-16 right-24 bg-white mt w-48 shadow-lg rounded-md border border-gray-200">
                   {!isLoggedIn ? (
                     <div className="py-2">
-                      <button onClick={handleLogin} className="block w-full hover:text-blue-600 px-4 py-2 text-gray-600 hover:bg-gray-100">
+                      <button
+                        onClick={handleLogin}
+                        className="block w-full hover:text-blue-600 px-4 py-2 text-gray-600 hover:bg-gray-100"
+                      >
                         Login
                       </button>
-                      <button onClick={handleRegister} className="block w-full hover:text-blue-600 px-4 py-2 text-gray-600 hover:bg-gray-100">
+                      <button
+                        onClick={handleRegister}
+                        className="block w-full hover:text-blue-600 px-4 py-2 text-gray-600 hover:bg-gray-100"
+                      >
                         Register
                       </button>
                     </div>
                   ) : (
                     <div className="py-2">
-                      <button className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Profile</button>
-                      <button className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Settings</button>
-                      <button onClick={handleLogout} className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                      <button className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                        Profile
+                      </button>
+                      <button className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                        Settings
+                      </button>
+                      <button
+                        onClick={handleLogout}
+                        className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                      >
                         Logout
                       </button>
                     </div>
@@ -121,19 +157,34 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#" className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            >
               Home
             </a>
-            <a href="#" className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            >
               Products
             </a>
-            <a href="#" className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            >
               Categories
             </a>
-            <a href="#" className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            >
               Sell
             </a>
-            <a href="#" className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            >
               About
             </a>
           </div>

@@ -22,6 +22,30 @@ export default function Register() {
   const navigate = useNavigate(); // Initialize useNavigate for redirection
 
   const handleNextStep = () => {
+    if (step === 3) {
+      // Save user data to localStorage after successful registration
+      const user = {
+        firstName,
+        lastName,
+        address1,
+        address2,
+        country,
+        phone,
+        email,
+        password,
+      };
+
+      // Store user object in localStorage
+      localStorage.setItem("user", JSON.stringify(user));
+
+      toast.success("Registered successfully!");
+      
+      // Redirect to the Login page after registration
+      setTimeout(() => {
+        navigate("/login"); // Navigate to the Login page
+      }, 0);
+    }
+
     if (step === 1 && !firstName) {
       toast.error("First name is required");
       return;
@@ -65,17 +89,7 @@ export default function Register() {
       return;
     }
 
-    setStep(step + 1);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Show success toast
-    toast.success("Registration successful!");
-    // Redirect to the Login page after 2 seconds (to let the toast show)
-    setTimeout(() => {
-      navigate("/login");
-    }, 2000);
+    setStep(step + 1); // Move to the next step
   };
 
   return (
@@ -90,7 +104,7 @@ export default function Register() {
         <h2 className="text-2xl font-semibold text-center text-blue-600 mb-6">
           Register
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form className="space-y-4">
           {step === 1 && (
             <>
               <div className="relative">

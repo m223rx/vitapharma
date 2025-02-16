@@ -7,7 +7,8 @@ export const products = [
     discountedPrice: 69.99,
     rating: 4.5,
     reviewCount: 128,
-    image: "https://via.placeholder.com/300x300?text=Wireless+Earbuds",
+    image:
+      "https://images-cdn.ubuy.co.in/660215c9b57a0722024a08a0-bluetooth-earbuds-wireless-ear-buds.jpg",
     description:
       "High-quality wireless earbuds with noise cancellation and long battery life.",
     features: [
@@ -27,7 +28,8 @@ export const products = [
     discountedPrice: null,
     rating: 4.2,
     reviewCount: 256,
-    image: "https://via.placeholder.com/300x300?text=Fitness+Tracker",
+    image:
+      "https://cdn.thewirecutter.com/wp-content/media/2023/11/fitness-tracker-2048px-5344.jpg?auto=webp&quality=75&crop=1.91:1&width=1200",
     description:
       "Track your fitness goals with this advanced smart fitness tracker.",
     features: [
@@ -47,7 +49,8 @@ export const products = [
     discountedPrice: 109.99,
     rating: 4.8,
     reviewCount: 89,
-    image: "https://via.placeholder.com/300x300?text=Leather+Watch",
+    image:
+      "https://i5.walmartimages.com/seo/Casio-Men-s-Classic-Multi-Hand-Brown-Leather-Strap-Watch-MTPSW300L2AV_4baf289e-f16f-4bd1-b8cb-3265fe0e2539.733bff1f4f00048dafe70d1b003fa3f1.jpeg",
     description:
       "Elegant men's watch with genuine leather strap and quartz movement.",
     features: [
@@ -67,7 +70,8 @@ export const products = [
     discountedPrice: null,
     rating: 4.9,
     reviewCount: 312,
-    image: "https://via.placeholder.com/300x300?text=Chef+Knife",
+    image:
+      "https://www.seriouseats.com/thmb/_q6hIdr1n3miFW5GKY8OBQEUfU8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SeriousEats_ZwillingPro8InchChefsKnife_022_DB_1-3x2-ad5c25cad46949e4b5c2fa0d2b6b4cac.jpeg",
     description:
       "High-carbon stainless steel chef's knife for professional and home cooks.",
     features: [
@@ -87,7 +91,8 @@ export const products = [
     discountedPrice: 29.99,
     rating: 4.6,
     reviewCount: 178,
-    image: "https://via.placeholder.com/300x300?text=Green+Tea+Set",
+    image:
+      "https://m.media-amazon.com/images/I/613LPLuscDL._AC_UF350,350_QL80_.jpg",
     description: "Premium organic green tea set with various flavors.",
     features: [
       "100% organic",
@@ -106,7 +111,7 @@ export const products = [
     discountedPrice: null,
     rating: 4.3,
     reviewCount: 205,
-    image: "https://via.placeholder.com/300x300?text=Yoga+Mat",
+    image: "https://m.media-amazon.com/images/I/61osi4oylYL._AC_UY1000_.jpg",
     description:
       "Eco-friendly, non-slip yoga mat with carrying strap for easy transport.",
     features: [
@@ -126,7 +131,7 @@ export const products = [
     discountedPrice: 19.99,
     rating: 4.7,
     reviewCount: 432,
-    image: "https://via.placeholder.com/300x300?text=Water+Bottle",
+    image: "https://m.media-amazon.com/images/I/71+RrQvUFLL._AC_SL1500_.jpg",
     description:
       "Durable, insulated stainless steel water bottle that keeps drinks cold for 24 hours.",
     features: [
@@ -146,7 +151,7 @@ export const products = [
     discountedPrice: null,
     rating: 4.4,
     reviewCount: 167,
-    image: "https://via.placeholder.com/300x300?text=Charging+Pad",
+    image: "https://m.media-amazon.com/images/I/618JIF44laL._AC_SL1500_.jpg",
     description:
       "Fast wireless charging pad compatible with Qi-enabled devices.",
     features: [
@@ -166,7 +171,7 @@ export const products = [
     discountedPrice: 44.99,
     rating: 4.6,
     reviewCount: 88,
-    image: "https://via.placeholder.com/300x300?text=Laptop+Sleeve",
+    image: "https://m.media-amazon.com/images/I/51mEERU7OiS._AC_SL1001_.jpg",
     description:
       "Stylish and protective leather sleeve for laptops up to 15 inches.",
     features: [
@@ -186,7 +191,8 @@ export const products = [
     discountedPrice: 17.99,
     rating: 4.2,
     reviewCount: 231,
-    image: "https://via.placeholder.com/300x300?text=Smart+Bulb",
+    image:
+      "https://i5.walmartimages.com/seo/GE-Cync-A19-Smart-LED-Light-Bulb-Color-Changing-Indoor-Decor-Lights-60-Watts-Medium-Base-1pk_39d54803-6b59-4a85-96c3-94c6c9b2ea75.ded432ca68c3b4b42c0f9a36d8b2c367.jpeg",
     description:
       "Wi-Fi enabled smart LED bulb with millions of colors and voice control.",
     features: [

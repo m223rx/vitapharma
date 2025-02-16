@@ -15,6 +15,7 @@ import ProductsPage from "./pages/ProductsPage";
 import CartPage from "./pages/CartPage";
 import SalePage from "./pages/SalePage";
 import AuthPage from "./pages/AuthPage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
 
 function AppContent() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function AppContent() {
         <Route path='/auth' element={<AuthPage />} />
         <Route path='/sale' element={<SalePage />} />
         <Route path='/products' element={<ProductsPage />} />
+        <Route path="/product/:productId" element={<ProductDetailsPage />} />
       </Routes>
       {location.pathname !== "/auth" && <Footer />}
     </>

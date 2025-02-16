@@ -186,7 +186,7 @@ function ProductsPage({ product }) {
               </h2>
               <a
                 className='text-lg font-bold text-indigo-600 underline'
-                href='#'
+                href='/sale'
               >
                 Discover our hot products
               </a>

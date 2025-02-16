@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ShoppingCart, User, Menu, X, Search } from "lucide-react";
-import { useNavigate } from "react-router-dom"; // For redirection
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,7 +68,7 @@ const Navbar = () => {
                 Sale
               </a>
               <a
-                href='#'
+                href='/about'
                 className='text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium'
               >
                 About

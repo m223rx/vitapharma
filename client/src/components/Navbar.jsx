@@ -15,6 +15,7 @@ const Navbar = () => {
   const handleLogin = () => {
     navigate("/login");
     setIsProfileMenuOpen();
+    setIsProfileMenuOpen();
   };
 
   const handleRegister = () => {

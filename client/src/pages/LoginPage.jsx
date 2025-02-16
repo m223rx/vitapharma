@@ -22,10 +22,11 @@ export default function Login() {
 
     // Show success toast if login is successful
     toast.success("Login successful!");
+    localStorage.setItem('isAuthenticated', true)
     // Redirect to another page (e.g., dashboard) after 2 seconds
     setTimeout(() => {
-      navigate("/dashboard"); // Redirect to dashboard or any other page
-    }, 2000);
+      navigate("/"); // Redirect to dashboard or any other page
+    }, 1000);
   };
 
   return (

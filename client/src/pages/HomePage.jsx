@@ -13,6 +13,7 @@ const categoryIcons = {
 };
 
 function HomePage() {
+
   return (
     <>
       <section className='bg-indigo-700 py-20 text-white'>

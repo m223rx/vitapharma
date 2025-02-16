@@ -32,7 +32,8 @@ const Navbar = () => {
   };
 
   const toggleProfileMenu = () => {
-    setIsProfileMenuOpen(!isProfileMenuOpen);
+    navigate("/auth");
+    // setIsProfileMenuOpen(!isProfileMenuOpen);
   };
 
   return (
@@ -61,10 +62,10 @@ const Navbar = () => {
                 Products
               </a>
               <a
-                href='#'
+                href='/sale'
                 className='text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium'
               >
-                Sell
+                Sale
               </a>
               <a
                 href='#'

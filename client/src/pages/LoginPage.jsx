@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // Initialize useNavigate for redirection
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,22 +15,19 @@ export default function Login() {
     const storedUser = JSON.parse(localStorage.getItem("user"));
 
     if (!storedUser || storedUser.email !== email || storedUser.password !== password) {
-      // Show error toast if email or password is incorrect
       toast.error("Invalid email or password!");
       return;
     }
-
-    // Show success toast if login is successful
+    
     toast.success("Login successful!");
     localStorage.setItem('isAuthenticated', true)
-    // Redirect to another page (e.g., dashboard) after 2 seconds
     setTimeout(() => {
-      navigate("/"); // Redirect to dashboard or any other page
+      navigate("/");
     }, 1000);
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-blue-100">
+    <div className="flex items-center justify-center min-h-screen bg-[#FBFFE4]">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ShoppingCart, User, Menu, X, Search } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -7,6 +7,10 @@ const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setIsLoggedIn(!!localStorage.getItem("isAuthenticated"));
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -32,8 +36,11 @@ const Navbar = () => {
   };
 
   const toggleProfileMenu = () => {
-    navigate("/auth");
-    // setIsProfileMenuOpen(!isProfileMenuOpen);
+    if (!isLoggedIn) {
+      navigate("/auth");
+      return;
+    }
+    setIsProfileMenuOpen(!isProfileMenuOpen);
   };
 
   return (

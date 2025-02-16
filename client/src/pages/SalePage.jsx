@@ -20,7 +20,7 @@ const SalePage = () => {
     <div className='min-h-screen bg-gray-100'>
       <main className='container mx-auto px-4 py-8'>
         <h1 className='mb-8 text-center text-4xl font-bold text-indigo-700'>
-          Sale Items
+          On Sale Items
         </h1>
         <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {saleProducts.map((product) => (
@@ -31,7 +31,7 @@ const SalePage = () => {
               <img
                 src={product.image || "/placeholder.svg"}
                 alt={product.name}
-                className='h-48 w-full object-cover'
+                className='h-48 w-full object-contain'
               />
               <div className='p-4'>
                 <h2 className='mb-2 text-xl font-semibold'>{product.name}</h2>
@@ -66,7 +66,7 @@ const SalePage = () => {
                 <p className='mb-4 text-sm text-gray-600'>
                   {product.description}
                 </p>
-                <button className='flex w-full items-center justify-center rounded-full bg-indigo-600 px-4 py-2 text-white transition duration-300 hover:bg-indigo-700'>
+                <button className='flex w-full items-center justify-center rounded-full bg-indigo-600 px-4 py-2 text-white transiton duration-300 hover:bg-indigo-700 cursor-pointer'>
                   <ShoppingCart className='mr-2 h-5 w-5' />
                   Add to Cart
                 </button>

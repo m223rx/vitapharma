@@ -45,6 +45,7 @@ const Login = () => {
             <div className='relative'>
               <input
                 type='email'
+                name = "email"
                 id='email'
                 onChange={handleChange}
                 value={formData.email}
@@ -66,6 +67,7 @@ const Login = () => {
               <input
                 type='password'
                 id='password'
+                name = "password"
                 onChange={handleChange}
                 value={formData.password}
                 className='w-full rounded-lg border border-gray-300 p-3 pl-10 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200 placeholder-gray-700'

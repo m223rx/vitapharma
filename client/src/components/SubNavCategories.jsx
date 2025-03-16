@@ -147,7 +147,7 @@ function SubNavCategories() {
 
   const DesktopSubcategoryCard = ({ subcategory }) => (
     <motion.div
-      className='flex items-center space-x-3 p-2 hover:bg-gray-50'
+      className='flex items-center space-x-3 p-2 hover:bg-gray-50 cursor-pointer'
       whileHover={{ x: 5 }}
       onMouseEnter={() => setHoveredSubcategory(subcategory)}
       onMouseLeave={() => setHoveredSubcategory(null)}

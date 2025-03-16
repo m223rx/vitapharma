@@ -1,8 +1,7 @@
-"use client";
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star, ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
-import image from "../../assets/images/banners/face_care.webp";
+import image from "../../assets/images/banners/food_supplements.jpg";
 import { useNavigate } from "react-router-dom";
 
 const products = [
@@ -54,7 +53,7 @@ const products = [
 
 const categories = ["FACE", "BODY"];
 
-function FacialCare() {
+function FoodSupplements() {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("FACE");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -119,7 +118,7 @@ function FacialCare() {
               <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent' />
               <div className='absolute bottom-0 left-0 right-0 p-4 md:p-6 text-white'>
                 <h2 className='mb-2 text-2xl md:text-3xl font-bold'>
-                  Facial Care
+                  Food Supplements
                 </h2>
                 <button
                   className='rounded-full bg-[#89AC46] px-4 py-2 md:px-6 md:py-2 text-xs md:text-sm font-medium text-white transition-colors hover:bg-[#626F47] cursor-pointer flex items-center justify-between gap-2'
@@ -270,4 +269,4 @@ function FacialCare() {
   );
 }
 
-export default FacialCare;
+export default FoodSupplements;

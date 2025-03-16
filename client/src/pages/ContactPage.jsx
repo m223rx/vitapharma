@@ -75,7 +75,7 @@ const ContactPage = () => {
                 </div>
                 <div className='ml-4'>
                   <h3 className='text-lg font-medium'>Phone</h3>
-                  <p className='text-gray-600'>+1 (555) 123-4567</p>
+                  <p className='text-gray-600'>+216 71 123 456</p>
                 </div>
               </motion.div>
 
@@ -85,7 +85,7 @@ const ContactPage = () => {
                 </div>
                 <div className='ml-4'>
                   <h3 className='text-lg font-medium'>Email</h3>
-                  <p className='text-gray-600'>support@likidi.com</p>
+                  <p className='text-gray-600'>contact@vitapharma.tn</p>
                 </div>
               </motion.div>
 
@@ -96,7 +96,7 @@ const ContactPage = () => {
                 <div className='ml-4'>
                   <h3 className='text-lg font-medium'>Address</h3>
                   <p className='text-gray-600'>
-                    123 Market St, San Francisco, CA 94105
+                    123 Medical Avenue, Tunis, Tunisia
                   </p>
                 </div>
               </motion.div>
@@ -116,7 +116,7 @@ const ContactPage = () => {
               <iframe
                 title='map'
                 className='w-full h-64 rounded-lg'
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0977907225783!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858085a66d1641%3A0x5b8f0f9c336e7a24!2sSan%20Francisco%2C%20CA%2094105!5e0!3m2!1sen!2sus!4v1629890738774!5m2!1sen!2sus'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102239.97813238266!2d10.1016261!3d36.8064948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sTunis%2C%20Tunisia!5e0!3m2!1sen!2sus!4v1647887573777!5m2!1sen!2sus'
                 loading='lazy'
               ></iframe>
             </div>
@@ -202,7 +202,7 @@ const ContactPage = () => {
 
               <motion.button
                 type='submit'
-                className='w-full bg-[#89AC46] text-white py-3 px-6 rounded-md hover:bg-indigo-700 transition-colors duration-300 flex items-center justify-center'
+                className='w-full bg-[#89AC46] text-white py-3 px-6 rounded-md hover:bg-[#626F47] transition-colors duration-300 flex items-center justify-center cursor-pointer'
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

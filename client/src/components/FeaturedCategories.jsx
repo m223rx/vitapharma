@@ -1,17 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FcElectronics } from "react-icons/fc";
-import { CiFaceSmile } from "react-icons/ci";
-import { FaTshirt, FaHome, FaStar, FaDumbbell, FaBook } from "react-icons/fa";
 
 function FeaturedCategories() {
   const categoryIcons = {
-    Face: <CiFaceSmile className='text-blue-500'/>,
-    Fashion: <FaTshirt className='text-blue-500' />,
-    Home: <FaHome className='text-green-500' />,
-    Beauty: <FaStar className='text-yellow-500' />,
-    Sports: <FaDumbbell className='text-red-500' />,
-    Books: <FaBook className='text-purple-500' />,
+    Face: "https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg",
+    Body: "https://n.nordstrommedia.com/it/74e510ba-45a9-4056-a6c9-40f879ec10f4.jpeg?h=600&w=750",
+    Health:
+      "https://www.alimed.com/_resources/cache/images/category/932271_278x278-pad.jpg",
+    Beauty:
+      "https://static.independent.co.uk/2022/04/21/21/health%20and%20beauty.jpg?width=1200&height=1200&fit=crop",
+    Hair: "https://imgs.littleextralove.com/wp-content/uploads/2022/08/what-is-an-ideal-hair-care-routine-for-a-whole-week-feat.jpg",
+    Food: "https://cdn.mos.cms.futurecdn.net/pDRCwL6fuJyh5wdkTCg7NL.jpg",
   };
 
   const containerVariants = {
@@ -62,8 +61,12 @@ function FeaturedCategories() {
                 whileTap={{ scale: 0.95 }}
                 className='flex flex-col items-center rounded-lg bg-white p-4 shadow-md transition duration-300 hover:shadow-lg'
               >
-                <div className='mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-100'>
-                  {categoryIcons[category]}
+                <div className='mb-2 flex h-16 w-16 items-center justify-center rounded-full overflow-hidden bg-gray-100'>
+                  <img
+                    src={categoryIcons[category]}
+                    alt=''
+                    className='h-full w-full object-cover'
+                  />
                 </div>
                 <span className='text-center font-medium'>{category}</span>
               </motion.a>

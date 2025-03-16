@@ -41,6 +41,10 @@ const Navbar = () => {
     navigate("/cart");
   };
 
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
   const toggleProfileMenu = () => {
     if (!isLoggedIn) {
       navigate("/auth");
@@ -76,8 +80,8 @@ const Navbar = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <span className='text-2xl font-bold text-[#89AC46]'>
-                    ParaMed
+                  <span className='text-2xl font-bold text-[#89AC46] cursor-pointer' onClick={handleLogoClick}>
+                    VitaPharma
                   </span>
                 </motion.div>
               </div>
@@ -218,8 +222,7 @@ const Navbar = () => {
               </motion.div>
             </div>
           </div>
-
-          {/* Desktop SubNav */}
+          
           <div className='hidden md:block border-t border-gray-200'>
             <SubNavCategories />
           </div>
@@ -256,8 +259,7 @@ const Navbar = () => {
                     </motion.a>
                   ))}
                 </div>
-
-                {/* Mobile SubNav */}
+                
                 <div className='border-t border-gray-200'>
                   <SubNavCategories />
                 </div>

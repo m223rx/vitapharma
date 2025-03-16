@@ -1,93 +1,71 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 function Footer() {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <>
-      <footer className='bg-gray-800 py-8 text-white'>
+    <footer className='bg-gray-900 text-gray-300'>
+      <div className='bg-transparent py-12'>
         <div className='container mx-auto px-4'>
-          <div className='grid grid-cols-2 gap-8 md:grid-cols-4'>
-            <div>
-              <h3 className='mb-4 text-lg font-semibold'>Shop</h3>
-              <ul className='space-y-2'>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Categories
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    New Arrivals
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Popular
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Deals
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className='mb-4 text-lg font-semibold'>Customer Service</h3>
-              <ul className='space-y-2'>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    FAQs
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Shipping
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Returns
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className='mb-4 text-lg font-semibold'>About</h3>
-              <ul className='space-y-2'>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Our Story
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Press
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='hover:text-indigo-400'>
-                    Blog
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className='mb-4 text-lg font-semibold'>Follow Us</h3>
-              <div className='flex space-x-4'>
-                <a href='#' className='hover:text-indigo-400'>
+          <div className='flex flex-col lg:flex-row'>
+            <div className='mb-8 lg:mb-0 lg:w-1/2 lg:pr-8'>
+              <motion.h3
+                className='mb-6 text-2xl font-bold text-white'
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                Visit Our Store
+              </motion.h3>
+              <motion.div
+                className='flex items-center mb-4'
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+              >
+                <MapPin className='mr-3 h-5 w-5 text-white' />
+                <p className='text-white'>123 Medical Avenue, Tunis, Tunisia</p>
+              </motion.div>
+              <motion.div
+                className='flex items-center mb-4'
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+              >
+                <Phone className='mr-3 h-5 w-5 text-white' />
+                <p className='text-white'>+216 71 123 456</p>
+              </motion.div>
+              <motion.div
+                className='flex items-center mb-6'
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+              >
+                <Mail className='mr-3 h-5 w-5 text-white' />
+                <p className='text-white'>contact@VitaPharma.tn</p>
+              </motion.div>
+              <motion.div
+                className='flex space-x-4'
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+                <a
+                  href='#'
+                  className='rounded-full bg-white p-2 text-[#89AC46] transition-transform hover:scale-110'
+                >
                   <span className='sr-only'>Facebook</span>
                   <svg
-                    className='h-6 w-6'
+                    className='h-5 w-5'
                     fill='currentColor'
                     viewBox='0 0 24 24'
                     aria-hidden='true'
@@ -99,10 +77,13 @@ function Footer() {
                     />
                   </svg>
                 </a>
-                <a href='#' className='hover:text-indigo-400'>
+                <a
+                  href='#'
+                  className='rounded-full bg-white p-2 text-[#89AC46] transition-transform hover:scale-110'
+                >
                   <span className='sr-only'>Instagram</span>
                   <svg
-                    className='h-6 w-6'
+                    className='h-5 w-5'
                     fill='currentColor'
                     viewBox='0 0 24 24'
                     aria-hidden='true'
@@ -114,10 +95,13 @@ function Footer() {
                     />
                   </svg>
                 </a>
-                <a href='#' className='hover:text-indigo-400'>
+                <a
+                  href='#'
+                  className='rounded-full bg-white p-2 text-[#89AC46] transition-transform hover:scale-110'
+                >
                   <span className='sr-only'>Twitter</span>
                   <svg
-                    className='h-6 w-6'
+                    className='h-5 w-5'
                     fill='currentColor'
                     viewBox='0 0 24 24'
                     aria-hidden='true'
@@ -125,15 +109,235 @@ function Footer() {
                     <path d='M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84' />
                   </svg>
                 </a>
-              </div>
+              </motion.div>
             </div>
-          </div>
-          <div className='mt-8 border-t border-gray-700 pt-8 text-center'>
-            <p>&copy; 2025 MarketPlace. All rights reserved.</p>
+            <motion.div
+              className='lg:w-1/2'
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className='h-64 overflow-hidden rounded-lg shadow-lg lg:h-full'>
+                <iframe
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102239.97813238266!2d10.1016261!3d36.8064948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sTunis%2C%20Tunisia!5e0!3m2!1sen!2sus!4v1647887573777!5m2!1sen!2sus'
+                  width='100%'
+                  height='100%'
+                  style={{ border: 0 }}
+                  allowFullScreen=''
+                  loading='lazy'
+                  title='Store Location'
+                ></iframe>
+              </div>
+            </motion.div>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+      
+      <div className='container mx-auto px-4 py-12'>
+        <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5'>
+          <div className='lg:col-span-2'>
+            <motion.div
+              initial={fadeInUp.hidden}
+              whileInView={fadeInUp.visible}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className='mb-4 text-2xl font-bold text-white'>VitaPharma</h2>
+              <p className='mb-6 text-gray-400'>
+                Your trusted source for high-quality medical and VitaPharmaical
+                equipment. We provide healthcare professionals with the tools
+                they need to deliver exceptional care to their patients.
+              </p>
+              <div className='mb-6'>
+                <h3 className='mb-3 font-semibold text-white'>
+                  Subscribe to Our Newsletter
+                </h3>
+                <div className='flex'>
+                  <input
+                    type='email'
+                    placeholder='Your email address'
+                    className='w-full rounded-l-md border-0 bg-gray-800 px-4 py-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#89AC46]'
+                  />
+                  <button className='rounded-r-md bg-[#89AC46] px-4 py-2 text-white transition-colors hover:bg-[#7a9a3d]'>
+                    <Send className='h-5 w-5' />
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          
+          <motion.div
+            initial={fadeInUp.hidden}
+            whileInView={fadeInUp.visible}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <h3 className='mb-4 text-lg font-semibold text-white'>Shop</h3>
+            <ul className='space-y-2'>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  New Arrivals
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Popular Products
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Special Deals
+                </a>
+              </li>
+            </ul>
+          </motion.div>
+          
+          <motion.div
+            initial={fadeInUp.hidden}
+            whileInView={fadeInUp.visible}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <h3 className='mb-4 text-lg font-semibold text-white'>
+              Customer Service
+            </h3>
+            <ul className='space-y-2'>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Shipping & Delivery
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Returns & Exchanges
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Payment Methods
+                </a>
+              </li>
+            </ul>
+          </motion.div>
+          
+          <motion.div
+            initial={fadeInUp.hidden}
+            whileInView={fadeInUp.visible}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <h3 className='mb-4 text-lg font-semibold text-white'>About</h3>
+            <ul className='space-y-2'>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Our Story
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Press & Media
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href='/partnerships'
+                  className='text-gray-400 transition-colors hover:text-[#89AC46]'
+                >
+                  Partnerships
+                </a>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+      </div>
+      
+      <div className='bg-gray-950 py-6'>
+        <div className='container mx-auto px-4'>
+          <div className='flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0'>
+            <p className='text-sm text-gray-500'>
+              &copy; {new Date().getFullYear()} VitaPharma. All rights reserved.
+            </p>
+            <div className='flex space-x-6'>
+              <a
+                href='#'
+                className='text-sm text-gray-500 hover:text-[#89AC46]'
+              >
+                Privacy Policy
+              </a>
+              <a
+                href='#'
+                className='text-sm text-gray-500 hover:text-[#89AC46]'
+              >
+                Terms of Service
+              </a>
+              <a
+                href='#'
+                className='text-sm text-gray-500 hover:text-[#89AC46]'
+              >
+                Cookie Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
 

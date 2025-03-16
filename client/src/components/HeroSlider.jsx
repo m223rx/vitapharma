@@ -3,26 +3,30 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+import slide1 from "../assets/images/banners/slide1.jpg";
+import slide2 from "../assets/images/banners/slide2.jpg";
+import slide3 from "../assets/images/banners/slide3.jpg";
+
 const slides = [
   {
     id: 1,
-    title: "Welcome to Likidi",
+    title: "Welcome to VitaPharma",
     description: "Discover amazing products at unbeatable prices",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8",
-    link: "/products/electronics",
+    image: slide1,
+    link: "/products",
   },
   {
     id: 2,
-    title: "Summer Collection",
+    title: "New Arrivals",
     description: "Explore our latest fashion trends",
-    image: "https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7",
-    link: "/products/fashion",
+    image: slide2,
+    link: "/new-arrivals",
   },
   {
     id: 3,
     title: "Special Offers",
     description: "Up to 50% off on selected items",
-    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da",
+    image: slide3,
     link: "/sale",
   },
 ];
@@ -87,7 +91,7 @@ const HeroSlider = () => {
 
   return (
     <motion.section
-      className='relative h-[600px] bg-indigo-700 overflow-hidden'
+      className='relative h-[600px] bg-[#89AC46] overflow-hidden'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -145,7 +149,7 @@ const HeroSlider = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className='rounded-full bg-white px-8 py-3 text-lg font-semibold text-[#89AC46] transition duration-300 hover:bg-indigo-100'
+              className='rounded-full bg-white px-8 py-3 text-lg font-semibold text-[#89AC46] transition duration-300 hover:bg-[#626F47] hover:text-white cursor-pointer'
             >
               Learn More
             </motion.button>
@@ -154,7 +158,7 @@ const HeroSlider = () => {
       </AnimatePresence>
 
       <motion.button
-        className='absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors'
+        className='absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-[#89AC46] backdrop-blur-sm text-white hover:bg-[#89AC46]/30 transition-colors cursor-pointer'
         onClick={() => paginate(-1)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -163,7 +167,7 @@ const HeroSlider = () => {
       </motion.button>
 
       <motion.button
-        className='absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors'
+        className='absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-[#89AC46] backdrop-blur-sm text-white hover:bg-[#89AC46]/30 transition-colors cursor-pointer'
         onClick={() => paginate(1)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -176,7 +180,7 @@ const HeroSlider = () => {
           <motion.button
             key={index}
             className={`w-3 h-3 rounded-full ${
-              slideIndex === index ? "bg-white" : "bg-white/50"
+              slideIndex === index ? "bg-[#89AC46]" : "bg-white/50"
             }`}
             onClick={() => handleDotClick(index)}
             whileHover={{ scale: 1.2 }}

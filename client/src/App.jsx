@@ -11,11 +11,15 @@ import About from "./pages/AboutPage";
 import Contact from "./pages/ContactPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ProductsPage from "./pages/ProductsPage";
 import CartPage from "./pages/CartPage";
 import SalePage from "./pages/SalePage";
 import AuthPage from "./pages/AuthPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
+import NewArrivalsPage from "./pages/NewArrivalsPage";
+import AllProductsPage from "./pages/AllProductsPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import OrderConfirmationPage from "./pages/OrderConfirmationPage";
+import PartnershipPage from "./pages/PartnershipPage";
 
 function AppContent() {
   const location = useLocation();
@@ -30,8 +34,12 @@ function AppContent() {
         <Route path='/cart' element={<CartPage />} />
         <Route path='/auth' element={<AuthPage />} />
         <Route path='/sale' element={<SalePage />} />
-        <Route path='/products' element={<ProductsPage />} />
-        <Route path="/product/:productId" element={<ProductDetailsPage />} />
+        <Route path='/checkout' element={<CheckoutPage />} />
+        <Route path='/products' element={<AllProductsPage />} />
+        <Route path='/new-arrivals' element={<NewArrivalsPage />} />
+        <Route path='/partnerships' element={<PartnershipPage />} />
+        <Route path='/product/:productId' element={<ProductDetailsPage />} />
+        <Route path='/order-confirmation' element={<OrderConfirmationPage />} />
       </Routes>
       {location.pathname !== "/auth" && <Footer />}
     </>

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+"use client";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Tab } from "@headlessui/react";
 import Login from "../components/Login";

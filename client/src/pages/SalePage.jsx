@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import { products } from "../data/products";
 import { Star, ShoppingCart } from "lucide-react";
 

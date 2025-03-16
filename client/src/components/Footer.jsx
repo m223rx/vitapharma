@@ -133,7 +133,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      
+
       <div className='container mx-auto px-4 py-12'>
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5'>
           <div className='lg:col-span-2'>
@@ -166,7 +166,7 @@ function Footer() {
               </div>
             </motion.div>
           </div>
-          
+
           <motion.div
             initial={fadeInUp.hidden}
             whileInView={fadeInUp.visible}
@@ -177,7 +177,7 @@ function Footer() {
             <ul className='space-y-2'>
               <li>
                 <a
-                  href='#'
+                  href='/new-arrivals'
                   className='text-gray-400 transition-colors hover:text-[#89AC46]'
                 >
                   New Arrivals
@@ -201,7 +201,7 @@ function Footer() {
               </li>
             </ul>
           </motion.div>
-          
+
           <motion.div
             initial={fadeInUp.hidden}
             whileInView={fadeInUp.visible}
@@ -214,7 +214,7 @@ function Footer() {
             <ul className='space-y-2'>
               <li>
                 <a
-                  href='#'
+                  href='/contact'
                   className='text-gray-400 transition-colors hover:text-[#89AC46]'
                 >
                   Contact Us
@@ -254,7 +254,7 @@ function Footer() {
               </li>
             </ul>
           </motion.div>
-          
+
           <motion.div
             initial={fadeInUp.hidden}
             whileInView={fadeInUp.visible}
@@ -265,7 +265,7 @@ function Footer() {
             <ul className='space-y-2'>
               <li>
                 <a
-                  href='#'
+                  href='/our-story'
                   className='text-gray-400 transition-colors hover:text-[#89AC46]'
                 >
                   Our Story
@@ -273,7 +273,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href='#'
+                  href='/careers'
                   className='text-gray-400 transition-colors hover:text-[#89AC46]'
                 >
                   Careers
@@ -281,7 +281,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href='#'
+                  href='/press-media'
                   className='text-gray-400 transition-colors hover:text-[#89AC46]'
                 >
                   Press & Media
@@ -289,7 +289,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href='#'
+                  href='/blog'
                   className='text-gray-400 transition-colors hover:text-[#89AC46]'
                 >
                   Blog
@@ -307,7 +307,7 @@ function Footer() {
           </motion.div>
         </div>
       </div>
-      
+
       <div className='bg-gray-950 py-6'>
         <div className='container mx-auto px-4'>
           <div className='flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0'>

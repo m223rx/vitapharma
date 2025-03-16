@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
+"use client";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star, ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
 import image from "../../assets/images/banners/hair_care.jpg";

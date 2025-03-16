@@ -297,7 +297,7 @@ const PartnershipPage = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                src='/placeholder.svg?height=400&width=600&text=Partnership'
+                src='https://placehold.co/700x300'
                 alt='VitaPharma Partnership'
                 className='rounded-lg shadow-xl'
               />

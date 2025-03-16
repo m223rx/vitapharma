@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+"use client";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react";
-import Navbar from "../components/Navbar";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({

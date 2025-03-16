@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";

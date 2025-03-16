@@ -10,6 +10,8 @@ import FoodSupplements from "../components/products/FoodSupplements";
 import LatestProducts from "../components/LatestProducts";
 import HotSalesDiv from "../components/HotSalesDiv";
 import GetInTouch from "../components/GetInTouch";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function HomePage() {
   return (

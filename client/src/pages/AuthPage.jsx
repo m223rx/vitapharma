@@ -21,7 +21,7 @@ const AuthPage = () => {
               className={({ selected }) =>
                 `w-1/2 py-4 text-center text-lg font-medium focus:outline-none ${
                   selected
-                    ? "bg-indigo-600 text-white"
+                    ? "bg-[#89AC46] text-white"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`
               }
@@ -32,7 +32,7 @@ const AuthPage = () => {
               className={({ selected }) =>
                 `w-1/2 py-4 text-center text-lg font-medium focus:outline-none ${
                   selected
-                    ? "bg-indigo-600 text-white"
+                    ? "bg-[#89AC46] text-white"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`
               }

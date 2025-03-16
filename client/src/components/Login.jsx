@@ -80,7 +80,7 @@ const Login = () => {
           <button
             type='submit'
             onClick={handleSubmit}
-            className='w-full rounded-lg bg-indigo-600 p-3 text-white transition duration-300 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50 cursor-pointer'
+            className='w-full rounded-lg bg-[#89AC46] p-3 text-white transition duration-300 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50 cursor-pointer'
           >
             Log In
           </button>

@@ -9,7 +9,7 @@ function AboutPage() {
         <div className="flex flex-col lg:flex-row items-center">
           {/* Left side text */}
           <div className="lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-3xl font-extrabold text-indigo-600 mb-4">
+            <h2 className="text-3xl font-extrabold text-[#89AC46] mb-4">
               Welcome to Our Marketplace
             </h2>
             <p className="text-lg text-gray-700 mb-6">

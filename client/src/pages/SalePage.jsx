@@ -52,7 +52,7 @@ const SalePage = () => {
                   </span>
                 </div>
                 <div className='mb-2 flex items-center'>
-                  <span className='text-2xl font-bold text-indigo-600'>
+                  <span className='text-2xl font-bold text-[#89AC46]'>
                     ${product.discountedPrice.toFixed(2)}
                   </span>
                   <span className='ml-2 text-sm text-gray-500 line-through'>
@@ -66,7 +66,7 @@ const SalePage = () => {
                 <p className='mb-4 text-sm text-gray-600'>
                   {product.description}
                 </p>
-                <button className='flex w-full items-center justify-center rounded-full bg-indigo-600 px-4 py-2 text-white transiton duration-300 hover:bg-indigo-700 cursor-pointer'>
+                <button className='flex w-full items-center justify-center rounded-full bg-[#89AC46] px-4 py-2 text-white transiton duration-300 hover:bg-indigo-700 cursor-pointer'>
                   <ShoppingCart className='mr-2 h-5 w-5' />
                   Add to Cart
                 </button>

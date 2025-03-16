@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
       <div className='mt-3'>
         <h3 className='text-lg font-semibold'>{product.name}</h3>
         <div className='mt-2 flex items-center gap-2'>
-          <span className='text-xl font-bold text-indigo-600'>
+          <span className='text-xl font-bold text-[#89AC46]'>
             ${product.price}
           </span>
           <div className='flex items-center'>

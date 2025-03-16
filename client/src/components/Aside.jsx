@@ -30,7 +30,7 @@ const Aside = () => {
   return (
     <>
       <button
-        className='fixed left-0 top-20 z-40 m-2 rounded-full bg-indigo-600 p-2 text-white shadow-lg transition-all duration-300 hover:bg-indigo-700 focus:outline-none lg:hidden'
+        className='fixed left-0 top-20 z-40 m-2 rounded-full bg-[#89AC46] p-2 text-white shadow-lg transition-all duration-300 hover:bg-indigo-700 focus:outline-none lg:hidden'
         onClick={toggleAside}
       >
         {isOpen ? <ChevronLeft size={24} /> : <ChevronRight size={24} />}
@@ -51,7 +51,7 @@ const Aside = () => {
                 <label className='flex items-center'>
                   <input
                     type='checkbox'
-                    className='form-checkbox text-indigo-600'
+                    className='form-checkbox text-[#89AC46]'
                   />
                   <span className='ml-2 text-gray-700'>{category}</span>
                 </label>
@@ -88,7 +88,7 @@ const Aside = () => {
                 size={24}
                 className={`cursor-pointer ${
                   star <= rating
-                    ? "fill-indigo-600 text-indigo-600"
+                    ? "fill-[#89AC46] text-[#89AC46]"
                     : "text-gray-300"
                 }`}
                 onClick={() => setRating(star)}
@@ -97,14 +97,14 @@ const Aside = () => {
           </div>
         </div>
 
-        <button className='w-full rounded bg-indigo-600 py-2 text-white hover:bg-indigo-700'>
+        <button className='w-full rounded bg-[#89AC46] py-2 text-white hover:bg-indigo-700'>
           Apply Filters
         </button>
       </aside>
 
       {isOpen && (
         <div
-          className='fixed inset-0 z-20 bg-[#FBFFE4] bg-opacity-50 lg:hidden'
+          className='fixed inset-0 z-20 bg-[#F1F0E9] bg-opacity-50 lg:hidden'
           onClick={toggleAside}
         ></div>
       )}

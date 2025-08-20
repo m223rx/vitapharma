@@ -1,6 +1,6 @@
 # 🌐 VitaPharma by m223rx
 
-![VitaPharma Screenshot](frontend/src/assets/screenshots/home.png)
+![VitaPharma Screenshot](client/src/assets/screenshots/home.png)
 
 ---
 
@@ -42,13 +42,13 @@
 ## 📸 Screenshots
 
 ### Homepage  
-![Homepage Screenshot](frontend/src/assets/screenshots/home.png)
+![Homepage Screenshot](client/src/assets/screenshots/home.png)
 
 ### Products Section  
-![Products Screenshot](frontend/src/assets/screenshots/products.png)
+![Products Screenshot](client/src/assets/screenshots/products.png)
 
 ### Mobile View  
-![Mobile Screenshot](frontend/src/assets/screenshots/mobile.png)
+![Mobile Screenshot](client/src/assets/screenshots/mobile.png)
 
 ---
 
